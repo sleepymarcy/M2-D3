@@ -1,59 +1,17 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
-    <!--
-        test
-        ASSIGNMENT RULES
-        - This challenge should be done in pairs, go in Eduflow to find who you are paired with
-        - Implement one exercise each, switching side from driver and navigator frequently
-        - We suggest you to use Zoom or Google Hangouts to speak and look at each other throughout the whole activity
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        - The exercise must be pushed to the repository and linked on EduFlow by the end of the day
-        - You can google / use StackOverflow BUT we suggest you to use just the material provided
-        - To test the page, open it with your browser and use the inspector.
-        - Use Bootstrap4.6 classes to arrange the page layout and components.
-        - Use containers, rows and cols in order to have a working responsive layout.
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <title>Travel Agency</title>
 
-
-        EXERCISE: 
-        You are creating a website for a Travel Agency.
-        In thins page you will add destinations of places you're dreaming to go to in the near future!
-
-
-        +++ Ex 1) Implement a navigation bar. Connected to all the sections of the page to the menu items. 
-        +++ Ex 2) Add a logo into the navigation bar (can be any image)
-        +++ Ex 3) Add a Jumbotron section with the name and the claim of the tour operator agency
-        Ex 4) Implement the "Deal of the Week" section. In this section you'll display 4 destinations.
-            In this section you should have:
-            - 4 destinations per row when the screen is very large
-            - 3 destinations per row when you are on a tablet (or a smaller window)
-            - 2 destinations per row when you are on a small screen
-
-        Ex 5) Implement the "Welcome Summer" section. In this section you'll propose 6 destinations to your user
-            In this section you should have:
-                - 6 destinations per row when the screen is very large
-                - 3 destinations per row when you are on a tablet (or a smaller window)
-                - 2 destinations per row when you are on a small screen
-        
-        Ex 6) Implement a "Deal of the day" section. In this section you'll have:
-            - 66% of the page with a picture of the destination
-            - 33% with Name, dates, price and a short description
-
-        Ex 7) Make the "Deal of the day" section disappear on mobile screens
-        Ex 8) Add to the Welcome Summer destinations section a large shadow
-        Ex 9) Create a section "Last Minute", in which you'll display the pictures of the destinations as Cards
-        Ex 10) Create a "Testimonial" section, in which the user can find several feedbacks from fake customers
-        Ex 11) Create a footer with the company informations and a "Contact Us" button
-
-        Ex 11) Create a button next to each section to collapse and reopen the given section
-        Ex 12) Create a method that counts the number of "travels" on the page
-        Ex 13) Create a modal view with a message and a email field
-        Ex 14) When the user clicks on "contact us" the modal is displayed
-        Ex 15) Create a function that adds a "HOT" badge to all the "Welcome Summer" offers
-        Ex 16) Create a function to delete all "cards" from the page
-    -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     </head>
 
@@ -81,7 +39,8 @@
         </div>
         </nav>
 
-        <!--  -->
+
+        <!-- Jumbotron -->
         <div class="container">
             <div class="jumbotron mt-1 bg-light">
                 <h1 class="display-4">Hello, to you!</h1>
@@ -91,6 +50,128 @@
                 <a class="btn btn-info btn-lg" href="features.html" role="button">Learn more</a>
               </div>
         </div>
+
+    <!-- Deal of the Week
+        Ex 4) Implement the "Deal of the Week" section. In this section you'll display 4 destinations.
+        In this section you should have:
+        - 4 destinations per row when the screen is very large
+        - 3 destinations per row when you are on a tablet (or a smaller window)
+        - 2 destinations per row when you are on a small screen
+       -->
+    <div class="container text-center" style="background-color:rgba(72, 126, 108, 0.452);">
+        <div>
+            <h3 class="py-3">Deal of the Week</h3>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col col-12 col-sm-6 col-md-4">
+                    <div class="card">
+                        <img src="santorini.jpg" class="card-img-top" alt="Santorini, Greece">
+                        <div class="card-body">
+                            <h5 class="card-title">Santorini, Greece</h5>
+                            <a href="https://www.booking.com/index.en-gb.html?label=gen173nr-1DCAEoggI46AdIM1gEaLYBiAEBmAEJuAEXyAEV2AED6AEBiAIBqAIDuALs0JaHBsACAdICJGY1ZmU1Njg5LWVjNWQtNGM5Mi1hZmFmLTE1ODA2ZTk2NDQ5MNgCBOACAQ;sid=bf61705c674f3c4458ec1a59265a935a;keep_landing=1&sb_price_type=total&"
+                                class="btn btn-dark" target="_blank">Book your trip</a>
+                        </div>
+                    <div class="card-header">
+                        Last Minute
+                    </div>
+                </div>
+            </div>
+
+            <div class="col col-12 col-sm-6 col-md-4">
+                    <div class="card">
+                        <img src="hawaii.jpg" class="card-img-top" alt="Hawaii">
+                        <div class="card-body">
+                            <h5 class="card-title">Hawi, Hawaii</h5>
+                            <a href="https://www.booking.com/index.en-gb.html?label=gen173nr-1DCAEoggI46AdIM1gEaLYBiAEBmAEJuAEXyAEV2AED6AEBiAIBqAIDuALs0JaHBsACAdICJGY1ZmU1Njg5LWVjNWQtNGM5Mi1hZmFmLTE1ODA2ZTk2NDQ5MNgCBOACAQ;sid=bf61705c674f3c4458ec1a59265a935a;keep_landing=1&sb_price_type=total&"
+                                class="btn btn-dark" target="_blank">Book your trip</a>
+                        </div>
+                    <div class="card-header">
+                        Last Minute
+                    </div>
+                </div>
+            </div>
+
+            <div class="col col-12 col-sm-6 col-md-4">
+                    <div class="card">
+                        <img src="croatia_dubrovnik.jpg" class="card-img-top"
+                            alt="Birds in the Trap Sing McKnight Album Cover">
+                        <div class="card-body">
+                            <h5 class="card-title">Dubrovnik, Croatia</h5>
+                            <a href="https://www.booking.com/index.en-gb.html?label=gen173nr-1DCAEoggI46AdIM1gEaLYBiAEBmAEJuAEXyAEV2AED6AEBiAIBqAIDuALs0JaHBsACAdICJGY1ZmU1Njg5LWVjNWQtNGM5Mi1hZmFmLTE1ODA2ZTk2NDQ5MNgCBOACAQ;sid=bf61705c674f3c4458ec1a59265a935a;keep_landing=1&sb_price_type=total&"
+                                class="btn btn-dark" target="_blank">Book your trip</a>
+                        </div>
+                        <div class="card-header">
+                            Last Minute
+                        </div>
+                    </div>
+                    
+            </div>
+
+
+            <div class="col col-12 col-sm-6 col-md-4">
+                    <div class="card">
+                        <img src="tenerife.jpg" class="card-img-top" alt="3001: A Laced Odyssey Album Cover">
+                        <div class="card-body">
+                            <h5 class="card-title">Tenerife, Spain</h5>
+                            <a href="https://www.booking.com/index.en-gb.html?label=gen173nr-1DCAEoggI46AdIM1gEaLYBiAEBmAEJuAEXyAEV2AED6AEBiAIBqAIDuALs0JaHBsACAdICJGY1ZmU1Njg5LWVjNWQtNGM5Mi1hZmFmLTE1ODA2ZTk2NDQ5MNgCBOACAQ;sid=bf61705c674f3c4458ec1a59265a935a;keep_landing=1&sb_price_type=total&"
+                                class="btn btn-dark" target="_blank">Book your trip</a>
+                        </div>
+                        <div class="card-header">
+                            Last Minute
+                        </div>
+                    </div>
+                    
+                
+            </div>
+        </div>
+    </div>
+
+    <!--    Ex 6) Implement a "Deal of the day" section. In this section you'll have:
+            - 66% of the page with a picture of the destination
+            - 33% with Name, dates, price and a short description -->
+            <div class="container text-center mt-2 bg-light d-none d-sm-block">
+                <h2 class="">Deal of the day</h2>
+                <hr>
+                <!-- row -->
+                <div class="row justify-content-between">
+                    <div class="col-12 col-sm-6 col-md-4">
+                        <div class="card shadow-sm  bg-white rounded">
+                            <img src="https://cdn.pixabay.com/photo/2018/03/16/16/57/pleso-3231824__340.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Slovakia, Vysoke Tatry</h5>
+                              <p class="card-text">Price ~ £200 per week</p>
+                              <p class="card-text">Cheap and nice!</p>
+                              <a href="https://www.booking.com/searchresults.en-gb.html?label=gen173nr-1FCAEoggI46AdIM1gEaLYBiAEBmAEJuAEXyAEV2AEB6AEB-AELiAIBqAIDuALs0JaHBsACAdICJGY1ZmU1Njg5LWVjNWQtNGM5Mi1hZmFmLTE1ODA2ZTk2NDQ5MNgCBuACAQ&lang=en-gb&sid=4c54f3e4c50eb5c35b5b1e3a8053cc59&sb=1&src=searchresults&src_elem=sb&error_url=https%3A%2F%2Fwww.booking.com%2Fsearchresults.en-gb.html%3Flabel%3Dgen173nr-1FCAEoggI46AdIM1gEaLYBiAEBmAEJuAEXyAEV2AEB6AEB-AELiAIBqAIDuALs0JaHBsACAdICJGY1ZmU1Njg5LWVjNWQtNGM5Mi1hZmFmLTE1ODA2ZTk2NDQ5MNgCBuACAQ%3Bsid%3D4c54f3e4c50eb5c35b5b1e3a8053cc59%3Btmpl%3Dsearchresults%3Bac_click_type%3Dg%3Bcheckin_month%3D7%3Bcheckin_monthday%3D24%3Bcheckin_year%3D2021%3Bcheckout_month%3D7%3Bcheckout_monthday%3D25%3Bcheckout_year%3D2021%3Bclass_interval%3D1%3Bdtdisc%3D0%3Bfrom_sf%3D1%3Bgroup_adults%3D1%3Bgroup_children%3D0%3Binac%3D0%3Bindex_postcard%3D0%3Blabel_click%3Dundef%3Bno_rooms%3D1%3Boffset%3D0%3Bplace_id%3DChIJXZwSdWmHSkcR5NZX6twtPR8%3Bplace_id_lat%3D47.2390429%3Bplace_id_lon%3D25.5908974%3Bpostcard%3D0%3Braw_dest_type%3Dlandmark%3Broom1%3DA%3Bsb_price_type%3Dtotal%3Bsearch_selected%3D1%3Bshw_aparth%3D1%3Bslp_r_match%3D0%3Bsrc%3Dsearchresults%3Bsrc_elem%3Dsb%3Bsrpvid%3Dc2c66511edf400a1%3Bss%3DCarpathian%2520Mountains%252C%2520Ukraine%3Bss_all%3D0%3Bss_raw%3DCarpathian%2520Mountains%2520ukr%3Bssb%3Dempty%3Bsshis%3D0%3Bssne%3DCarpathian%2520Mountains%3Bssne_untouched%3DCarpathian%2520Mountains%3Btop_ufis%3D1%26%3B&ss=Vysoke+Tatry%2C+Slovakia&is_ski_area=&ssne=Carpathian+Mountains%2C+Ukraine&ssne_untouched=Carpathian+Mountains%2C+Ukraine&checkin_year=2021&checkin_month=7&checkin_monthday=24&checkout_year=2021&checkout_month=7&checkout_monthday=25&group_adults=1&group_children=0&no_rooms=1&from_sf=1&ss_raw=tatry+&ac_position=0&ac_langcode=xu&ac_click_type=b&dest_id=2039&dest_type=region&place_id_lat=49.134534&place_id_lon=20.241657&search_pageview_id=c2c66511edf400a1&search_selected=true&region_type=free_region&search_pageview_id=c2c66511edf400a1&ac_suggestion_list_length=5&ac_suggestion_theme_list_length=0&sb_changed_destination=1" class="btn btn-dark">Book it now</a>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4">
+                        <div class="card shadow-sm bg-white rounded">
+                            <img src="https://location4film.com.ua/uploads/location/2016/0f0fcf4767662ce532dc84d9ea2607d1c9d63518.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Ukraine, Pip Ivan</h5>
+                              <p class="card-text">Price ~ £200 per week</p>
+                              <p class="card-text">Cheap and nice!</p>
+                              <a href="https://www.booking.com/searchresults.en-gb.html?label=gen173nr-1FCAEoggI46AdIM1gEaLYBiAEBmAEJuAEXyAEV2AEB6AEB-AELiAIBqAIDuALs0JaHBsACAdICJGY1ZmU1Njg5LWVjNWQtNGM5Mi1hZmFmLTE1ODA2ZTk2NDQ5MNgCBuACAQ&lang=en-gb&sid=4c54f3e4c50eb5c35b5b1e3a8053cc59&sb=1&src=searchresults&src_elem=sb&error_url=https%3A%2F%2Fwww.booking.com%2Fsearchresults.en-gb.html%3Flabel%3Dgen173nr-1FCAEoggI46AdIM1gEaLYBiAEBmAEJuAEXyAEV2AEB6AEB-AELiAIBqAIDuALs0JaHBsACAdICJGY1ZmU1Njg5LWVjNWQtNGM5Mi1hZmFmLTE1ODA2ZTk2NDQ5MNgCBuACAQ%3Bsid%3D4c54f3e4c50eb5c35b5b1e3a8053cc59%3Btmpl%3Dsearchresults%3Bac_click_type%3Db%3Bac_position%3D0%3Bcheckin_month%3D7%3Bcheckin_monthday%3D24%3Bcheckin_year%3D2021%3Bcheckout_month%3D7%3Bcheckout_monthday%3D25%3Bcheckout_year%3D2021%3Bclass_interval%3D1%3Bdest_id%3D2039%3Bdest_type%3Dregion%3Bdtdisc%3D0%3Bfrom_sf%3D1%3Bgroup_adults%3D1%3Bgroup_children%3D0%3Binac%3D0%3Bindex_postcard%3D0%3Blabel_click%3Dundef%3Bno_rooms%3D1%3Boffset%3D0%3Bpostcard%3D0%3Braw_dest_type%3Dregion%3Broom1%3DA%3Bsb_price_type%3Dtotal%3Bsearch_selected%3D1%3Bshw_aparth%3D1%3Bslp_r_match%3D0%3Bsrc%3Dsearchresults%3Bsrc_elem%3Dsb%3Bsrpvid%3D043e652368bd0027%3Bss%3DVysoke%2520Tatry%252C%2520Slovakia%3Bss_all%3D0%3Bss_raw%3Dtatry%3Bssb%3Dempty%3Bsshis%3D0%3Bssne%3DCarpathian%2520Mountains%252C%2520Ukraine%3Bssne_untouched%3DCarpathian%2520Mountains%252C%2520Ukraine%3Btop_ufis%3D1%26%3B&ss=Carpathians+-+Ukraine%2C+Ukraine&is_ski_area=&ssne=High+Tatras&ssne_untouched=High+Tatras&checkin_year=2021&checkin_month=7&checkin_monthday=24&checkout_year=2021&checkout_month=7&checkout_monthday=25&group_adults=1&group_children=0&no_rooms=1&from_sf=1&ss_raw=ukraine&ac_position=1&ac_langcode=en&ac_click_type=b&dest_id=5924&dest_type=region&place_id_lat=48.571982&place_id_lon=24.042974&search_pageview_id=043e652368bd0027&search_selected=true&region_type=free_region&search_pageview_id=043e652368bd0027&ac_suggestion_list_length=5&ac_suggestion_theme_list_length=0&sb_changed_destination=1" class="btn btn-dark">Book it now</a>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4">
+                        <div class="card shadow-sm bg-white rounded">
+                            <img src="https://www.myglobalviewpoint.com/wp-content/uploads/2019/02/Most-Instagrammable-Beautiful-Places-UK.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">England, Wales</h5>
+                              <p class="card-text">Price ~ £400 per week</p>
+                              <p class="card-text">Expensive but very nice!</p>
+                              <a href="https://www.booking.com/searchresults.en-gb.html?label=gen173nr-1FCAEoggI46AdIM1gEaLYBiAEBmAEJuAEXyAEV2AEB6AEB-AELiAIBqAIDuALs0JaHBsACAdICJGY1ZmU1Njg5LWVjNWQtNGM5Mi1hZmFmLTE1ODA2ZTk2NDQ5MNgCBuACAQ&lang=en-gb&sid=4c54f3e4c50eb5c35b5b1e3a8053cc59&sb=1&src=searchresults&src_elem=sb&error_url=https%3A%2F%2Fwww.booking.com%2Fsearchresults.en-gb.html%3Flabel%3Dgen173nr-1FCAEoggI46AdIM1gEaLYBiAEBmAEJuAEXyAEV2AEB6AEB-AELiAIBqAIDuALs0JaHBsACAdICJGY1ZmU1Njg5LWVjNWQtNGM5Mi1hZmFmLTE1ODA2ZTk2NDQ5MNgCBuACAQ%3Bsid%3D4c54f3e4c50eb5c35b5b1e3a8053cc59%3Btmpl%3Dsearchresults%3Bac_click_type%3Db%3Bac_position%3D0%3Bclass_interval%3D1%3Bdest_id%3D1127%3Bdest_type%3Dregion%3Bdtdisc%3D0%3Bfrom_sf%3D1%3Bgroup_adults%3D1%3Bgroup_children%3D0%3Binac%3D0%3Bindex_postcard%3D0%3Blabel_click%3Dundef%3Bno_rooms%3D1%3Boffset%3D0%3Bpostcard%3D0%3Braw_dest_type%3Dregion%3Broom1%3DA%3Bsb_price_type%3Dtotal%3Bsearch_selected%3D1%3Bshw_aparth%3D1%3Bslp_r_match%3D0%3Bsrc%3Dsearchresults%3Bsrc_elem%3Dsb%3Bsrpvid%3Dd95264fdfd7702aa%3Bss%3DWales%252C%2520United%2520Kingdom%3Bss_all%3D0%3Bss_raw%3Dwale%3Bssb%3Dempty%3Bsshis%3D0%3Bssne%3DWales%3Bssne_untouched%3DWales%3Btop_ufis%3D1%26%3B&ss=Wales&is_ski_area=0&ssne=Wales&ssne_untouched=Wales&dest_id=1127&dest_type=region&checkin_year=2021&checkin_month=7&checkin_monthday=24&checkout_year=2021&checkout_month=7&checkout_monthday=25&group_adults=1&group_children=0&no_rooms=1&sb_changed_dates=1&from_sf=1" class="btn btn-dark">Book it now</a>
+                            </div>
+                          </div>
+                    </div>
+
+                </div>
+            </div>
+
 <!-- SCRIPT -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
